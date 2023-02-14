@@ -1,11 +1,11 @@
 // import FormMain from "./functionalComponent/mainDiv";
-import Login from "./classComponent/formUsingClass";
+import HomePage from "./classComponent/HomePage";
 function App() {
     
   return (
     <>
    {/* <FormMain/> */}
-   <Login/>
+   <HomePage/>
    </>
   )
 }

@@ -4,7 +4,7 @@ class Input extends React.Component{
     render(){
         return(
             <>
-                <input onChange={this.props.fun} placeholder={this.props.placeholder} value={this.props.value} type={this.props.type}></input>
+                <input onChange={this.props.fun}  value={this.props.value} type={this.props.type} name={this.props.name} style={this.props.style}></input>
             </>
         )
     }
