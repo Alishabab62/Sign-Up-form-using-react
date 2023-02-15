@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Button from "./Button";
-import Login from "./Login";
+// import Login from "./Login";
 
 export default class HomePageHeader extends Component {
 // constructor(){
@@ -69,14 +69,10 @@ loginBtnStyle={
     fontWeight:"600" 
 }
 
-    // handleLogin=()=>{
-    //     this.setState({
-    //         loginRender:!this.state.loginRender
-    //     })
-    //     console.log("Hello")
-    // }
+    
 
   render() {
+  
     return (
       <>
         <header style={this.headerStyle}>
@@ -86,12 +82,11 @@ loginBtnStyle={
             <Button title="References" style={this.tabStyle}/>
             <Button title="Exercise" style={this.tabStyle}/>
             <Button title="Sign Up" style={this.tabStyle}/>
-            {/* <Login/> */}
             </div>
             <div>
             <Button title="Get Certified" style={this.getCertifiedBtnStyle}/>
             <Button title="Create website" style={this.createWebsiteBtn} />
-            <Button title="Log In" fun={this.handleLogin} style={this.loginBtnStyle}/>
+            <Button title={"Login"}  style={this.loginBtnStyle} fun ={this.props.fun}/>
             </div>
         </header>
       </>

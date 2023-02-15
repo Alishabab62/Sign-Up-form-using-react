@@ -98,7 +98,7 @@ forgotPasswordStyle ={
   render() {
     return (
       <div style={this.mainDivStyle}>
-        <Header/>
+        <Header fun={this.props.fun}/>
         <div style={this.formDiv}>
         <h3 style={this.loginHeadingStyle}>Login</h3>
         <div style={this.labelMainStyle}><p style={this.labelStyle}>Name</p><p style={this.labelStyle}>Need An Account?</p></div>
