@@ -2,6 +2,7 @@ import { Component } from "react";
 import Button from "./Button";
 import DropDownIcon from "./DropDownIcon";
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
 
 
 export default class HomePageHeader extends Component {
@@ -89,7 +90,9 @@ loginBtnStyle={
             <div>
             <Button title="Get Certified" style={this.getCertifiedBtnStyle}/>
             <Button title="Create website" style={this.createWebsiteBtn} />
-            <Button title={"Login"}  style={this.loginBtnStyle} fun ={this.props.fun}/>
+              <Link to="/login">
+            <Button title={"Login"}  style={this.loginBtnStyle} fun ={this.props.fun} />
+              </Link>
             </div>
         </header>
       </>

@@ -107,6 +107,7 @@ forgotPasswordStyle ={
       console.log(res)
 }   
   render() {
+    console.log(this.props)
     return (
       <div style={this.mainDivStyle}>
         <Header fun={this.props.fun}/>
